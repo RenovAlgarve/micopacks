@@ -29,7 +29,7 @@ jobs:
       run: ./gradlew assembleRelease
       
     - name: Upload apk
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
        name: relesse-apk
        path: app/build/outputs/apk/release/app-release.apk
